@@ -8,5 +8,5 @@ function distanceFromHqInFeet(distance) {
 }
 
 function distanceTravelledInFeet (start, destination) {
-    return (destination - start) * 264;
-    |
+    return |destination - start| * 264;
+  }
