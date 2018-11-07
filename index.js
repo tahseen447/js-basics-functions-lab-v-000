@@ -4,7 +4,7 @@ function distanceFromHqInBlocks(distance) {
 }
 
 function distanceFromHqInFeet(distance) {
-  return distanceFromHqInBlocks(blockNumber) * 264;
+  return distanceFromHqInBlocks(distance) * 264;
 }
 
 function distanceTravelledInFeet (start, destination) {
@@ -13,7 +13,7 @@ function distanceTravelledInFeet (start, destination) {
 
   function calculatesFarePrice (start, destination) {
     const distance = distanceTravelledInFeet(start, destination);
-  
+
     if (distance <= 400) {
       return 0;
     } else if (distance > 400 && distance <= 2000) {
